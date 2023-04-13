@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+.header__nav{
+    border-bottom: #070707;
+    width: 400px;
+    text-align: center;
+}
+.header__list{
+    justify-content: center;
+    
+
+    display: flex;
+}
+.about__hero{
+}
+.container{
+    width: 1124px;
+    margin: 0 auto;
+    
+
+}
+
+.title{
+font-weight: 700;
+font-size: 48px;
+line-height: 65px;
+
+color: #070707;
+}
+
+.header__item{
+    margin: 27px 20px;
+    text-align: center;
+
+}
+.abouthero__title{
+ font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 34px;
+margin: 100px 0px 50px ;
+text-align: center;
+
+
+}
+
+.container__hero{
+
+}
+
+.title{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 65px;
+margin: 12px 0px 50px;
+
+
+
+color: #070707;
+}
+
+.abouthero__text{
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+
+
+color: #070707;
+}
+
+.skills__title{
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 34px;
+line-height: 46px;
+text-align: center;
+
+color: #070707;
+margin: 100px 0px 20px 0px
+}
+.skills__subtitle{
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+color: #070707;
+margin: 20px;
+
+}
+
+.portfolio__title{
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 34px;
+line-height: 46px;
+text-align: center;
+
+color: #070707;
+margin: 100px 0px 50px 0px;
+}
+
+.portfolio__text{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+text-decoration-line: underline;
+color: #070707;
+margin: 40px 0px 70px 0px;
+
+}
+
+body{
+    background: #F5ECEC;
+}
+
+.shop__text{
+    
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+text-decoration-line: underline;
+color: #070707;
+margin: 40px 0px 70px 0px;
+}
+
+
+
+.skills_item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.abouthero__text{
+ padding-bottom: 30px;
+ width: 480px;
+ text-align: center;
+ margin: 0 auto;
+}
+
+.braun-landing{
+ font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+margin: 40px 0px 100px ;
+}
+
+.contacts{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.contacts__title{
+ font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 34px;
+line-height: 46px;
+margin-bottom: 20px ;
+}
+
+.contacts__subtitle{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 60px;
+}
+
+.button{
+    margin-bottom: 30px;
+}
+
+.footer__item{
+display: flex;
+justify-content: space-between;
+justify-content: center;
+margin-bottom: 60px ;
+
+
+}
+
+.footer__text{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+text-align: center;
+
+}
