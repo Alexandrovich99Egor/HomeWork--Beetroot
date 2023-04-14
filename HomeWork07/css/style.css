@@ -11,6 +11,8 @@
     border-bottom: #070707;
     width: 400px;
     text-align: center;
+    margin: 0 auto;
+    
 }
 .header__list{
     justify-content: center;
@@ -19,6 +21,30 @@
     display: flex;
 }
 .about__hero{
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+
+
+letter-spacing: 0.02em;
+
+color: #828282;
+}
+.about__herohome{
+    
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+
+
+letter-spacing: 0.02em;
+
+color: #070707;
 }
 .container{
     width: 1124px;
@@ -38,6 +64,7 @@ color: #070707;
 .header__item{
     margin: 27px 20px;
     text-align: center;
+   
 
 }
 .abouthero__title{
