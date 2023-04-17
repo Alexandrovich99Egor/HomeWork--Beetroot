@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+ul{
+    list-style: none
+}
+
+/*Reset End */
+
+
+/*Global style*/
+body{
+    font-family: Open-Sans;
+}
+.container{
+    max-width: 970px;
+    background-color: black;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+/*Global style end*/
+
+
+/* Header  */
+
+/* Header end */

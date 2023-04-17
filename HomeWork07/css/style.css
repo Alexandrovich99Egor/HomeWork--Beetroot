@@ -3,6 +3,7 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
+    
 }
 
 
@@ -16,9 +17,9 @@
 }
 .header__list{
     justify-content: center;
+    display: flex;
     
 
-    display: flex;
 }
 .about__hero{
 
@@ -33,6 +34,8 @@ letter-spacing: 0.02em;
 
 color: #828282;
 }
+
+
 .about__herohome{
     
 font-family: 'Open Sans';
@@ -62,11 +65,33 @@ color: #070707;
 }
 
 .header__item{
-    margin: 27px 20px;
+    margin: 27.5px 0px 20px 20px;
     text-align: center;
+    display: flex;
    
 
 }
+
+.about__hero{
+    transition: all 1s ease;
+}
+
+.about__hero:hover{
+ font-weight: bold;
+ color: #070707;
+ transition: 1s;
+ transform: scale(1.2);
+ 
+}
+
+.about__herohome:hover{
+ font-weight: bold;
+ color: #070707;
+ transition: 1s;
+ transform: scale(1.2);
+}
+
+
 .abouthero__title{
  font-family: 'Open Sans';
 font-style: normal;
@@ -171,7 +196,6 @@ text-decoration-line: underline;
 color: #070707;
 margin: 40px 0px 70px 0px;
 }
-
 
 
 .skills_item{
