@@ -1,0 +1,170 @@
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1440px;
+    min-width: none;
+}
+
+.container__header{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+   
+    
+   
+}
+
+.header__image{
+    padding: 19px 0px 0px 135px;
+}
+
+.header__item{
+    margin-left: 206px;
+    margin-top: 28px;
+    margin-right: 246px ;
+    white-space: nowrap;
+  
+   
+
+}
+
+.item__header{
+display: flex;
+display: inline;
+margin-right: 30px;
+width: 62px;
+height: 24px;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+
+
+text-transform: uppercase;
+text-decoration: none;
+
+
+
+color: #3C3C3C;
+}
+
+.item__header:hover{
+
+width: 70px;
+height: 24px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+text-transform: uppercase;
+
+color: #18B5DC;
+transition: 0.5s;
+
+
+flex: none;
+order: 2;
+flex-grow: 0;
+}
+.header__button{
+display: flex;
+justify-content: end;
+padding: 29px 136px 0px 0px;
+
+
+
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+    width: 130px;
+    height: 42px;
+    left: 1174px;
+    top: 19px;
+    border: 1px solid #3C3C3C;
+    
+}
+
+.button:hover{
+    background-color: #18B5DC;
+    transition: 0.5s;
+}
+
+.button__item{
+font-family: 'Lato';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+
+
+text-transform: uppercase;
+
+
+
+color: #3C3C3C;
+
+}
+/* Section Who We Are start */
+.title__about{
+    margin-top: 150px ;
+}
+
+
+.title{
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 34px;
+line-height: 41px;
+text-align: center;
+letter-spacing: 0.13em;
+text-transform: uppercase;
+color: #3C3C3C;
+margin-bottom: 64px;
+}
+.sub__title{
+ position: absolute;
+width: 570px;
+height: 42px;
+left: 435px;
+top: 328px;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #3C3C3C;
+margin-bottom: 60px ;
+}
+
+
+/* section who we are end */
+
+/* Hero Section Start */
+
+.container__title{
+    margin-bottom:
+}
+.title__hero-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+
+/* Hero Section End */

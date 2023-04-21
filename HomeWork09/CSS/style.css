@@ -1,0 +1,511 @@
+/* font-family: 'Montserrat', sans-serif; */
+/* css fonts */
+
+/* Defoult */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+img{
+    display: block;
+    width:100%;
+}
+
+ul{
+    list-style: none;
+
+}
+
+button{
+    border: 0;
+    background: transparent;
+    outline: none;
+    display: block;
+
+}
+
+a{
+    text-decoration: none;
+
+}
+
+:root{
+    /* fonts */
+    --main-fonts :'Montserrat', sans-serif;
+    
+
+    /* Corolor */
+    --color-black:#2F281E;
+    --color-orange:#FF9900;
+    --color-white:#FFFFFF;
+    --color-border:#BCD0E5;
+
+    /* fonts size */
+    --btn-fonts: 600 16px/20px var(--main-fonts);
+    /* 1)Font Weight 2)Font Size 3)Line Height  */
+    
+
+
+
+
+    /* spacing */
+    --r-4: 4px;
+
+
+
+
+
+ 
+    
+}
+
+.link{
+    color: var(--color-black);
+   
+}
+
+.link:hover{
+    color: var(--color-orange);
+} 
+
+
+button{
+    color: var(--color-black);
+    font: var(--btn-fonts);
+    justify-content: center;
+    align-items: center;
+    padding: 12px 22px;
+    border-radius: var(--r-4);
+    border: 1px solid;
+    background-color: #FF9900;
+    cursor: pointer;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Header Start */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header_cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo{
+    width: 120px;
+}
+
+.nav__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.container__button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* button start */
+.item__line:hover{
+    background-color: var(--color-white);
+    transition: 0.5s;
+}
+
+
+
+.item__main:hover{
+  background-color: var(--color-white);
+  transition: 0.5s;
+}
+
+/* button end */
+
+
+
+/* HEADER END */
+
+
+/* Section First Design Thinking Start */
+.title__main{
+
+display: flex;
+justify-content: center;
+gap: 112px;
+
+
+
+    
+    
+}
+
+.image__main-title{
+    display: block;
+    width: 644px;
+    height: 495px;
+
+    
+
+}
+
+.title__image{
+    display: flex;
+    justify-content: end;
+    margin-top: 99px ;
+
+}
+
+.main__item-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 167px ;
+    align-content: center;
+    gap: 30px ;
+
+}
+
+.btn__title-sub{
+    width: 180px;
+    height: 50px;
+    color: var(--color-white);
+}
+
+.title{
+    font: var(--main-fonts);
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+}
+
+.sub__title{
+    text-align: left;
+    font: var(--main-fonts);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+
+
+}
+
+.features__cont{
+    margin-top: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.features_text{
+    color: var(--color-black);
+    text-align: center;
+    font: var(--main-fonts);
+
+    font-size: 36px;
+    line-height: 44px;
+
+}
+
+
+.item__icon{
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+
+}
+
+.features__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px ;
+    margin-top: 50px;
+   
+    
+    
+}
+
+.item__features-icon{
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    
+    
+}
+
+.item__icon-text{
+    color: var(--color-black);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    margin-top: 16px;
+}
+
+.item__icon-text-sub{
+    margin-top: 16px;
+    color: var(--color-black);
+    font-style: var(--main-fonts);
+}
+
+
+.tem__icon-text-sub{
+    color: var(--color-black);
+    font-style: var(--main-fonts)
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.btn__features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 83px ;
+}
+
+.btn-features{
+    color: var(--color-white);
+    border: var(--color-border);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+ 
+}  
+
+
+.btn-features:hover{
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border: var(--color-border) solid 0.5px;
+    transition: 0.5s;
+}
+
+/* Section First Design Thinking End */
+
+
+
+
+
+/* Section Benefits Start */
+
+.benefits__cont{
+    display: flex;
+    align-items: center;
+    margin-top: 178px;
+}
+
+.benefits__image{
+    width: 550px;
+    display: flex;
+    
+
+}
+
+
+.benefits__item-image{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.benefits__title{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.benefits__text-main{
+    font-family: var(--main-fonts);
+    font-size: 36px;
+    font-weight: 700px;
+    line-height: 44px;
+    color: var(--color-black);
+    margin-bottom: 20px;
+
+}
+
+
+.benefits__sub-text{
+    font-family: var(--main-fonts);
+    font-size: 16px ;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 10px;
+
+
+}
+
+.benefits__sub{
+    font-family: var(--main-fonts);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 40px;
+    
+}
+
+.benefits__sub:first-child{
+    margin-bottom: 0px;
+}
+
+.benefits__text-main:first-child{
+margin-bottom: 20px;
+}
+/* Section Benefits End */
+
+/* Section Product Managers Start */
+.product__managers-image{
+    width: 570px;
+    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.product__managers{
+    display: flex;
+    justify-content: center;
+    gap: 125px ;
+    
+    
+
+}
+
+.product__managers-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 148px;
+
+
+   
+}
+
+.label__list-item{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    
+    
+    color: #544837;
+
+}
+
+
+.title__text-sub{
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    
+    
+    
+    color: #544837;
+}
+
+.title__text-main{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+}
+
+.product__list{
+    
+
+
+}
+
+.checkbox{
+    
+appearance: none;
+width: 35px;
+height: 35px;
+background-color: var(--color-orange);
+cursor: pointer;
+border: 0.1px solid var(--color-black);
+border-radius: 20%;
+margin-right: 38px ;
+vertical-align: middle;
+  
+}
+
+.checkbox:checked{
+   background-color: var(--color-orange);
+}
+
+.checkbox:checked::before{
+display: flex;
+justify-content: center;
+content: "\2714";
+font-size: 1.5rem;
+color: var(--color-white);
+  
+
+}
+
+.list__item{
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+   
+   
+    
+   
+    
+}
+.item__list-text{
+    font: var(--main-fonts);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--color-black);
+
+}
+
+
+/* Section Product Managers End */
+
+
+ 
