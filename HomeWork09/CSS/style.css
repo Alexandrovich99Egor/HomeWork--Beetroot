@@ -34,7 +34,15 @@ a{
 
 :root{
     /* fonts */
-    --main-fonts :'Montserrat', sans-serif;
+    --main-fonts : 'Montserrat', sans-serif;
+    --option-fontssmall:font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+
+
+
     
 
     /* Corolor */
@@ -278,7 +286,7 @@ gap: 112px;
 
 .tem__icon-text-sub{
     color: var(--color-black);
-    font-style: var(--main-fonts)
+    font-style: var(--main-fonts);
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -508,4 +516,164 @@ color: var(--color-white);
 /* Section Product Managers End */
 
 
+ /* Section  Marketers Start*/
+.marketers__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    max-width: 486px;
+    
+    
+    
+}
+
+
+.marketers{
+    padding-top: 120px;
+}
+
+
+.container marketers-cont{
+    position: relative;
+    
+
+}
+
+
+.image__marketers{
+    max-width: 540px ;
+    position: absolute;
+    transform: translateX(660px);
+    
+    
+    
+    
+    
+
+    
+}
+
+
+.marketers_title{
+    font-family: var(--main-fonts);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #2F281E;
+
+}
+
+
+.marketers__sub-title{
+    
+    color: #544837;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+.marketers__sub-title-text{
+    font-family: var(--main-fonts);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+
+}
+
+.marketers_title{
+    color: var(--color-black);
+    font-family: var(--main-fonts);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 20px;
+
+}
+
+
+.marketers__sub-title-text:nth-child(n){
+    margin-bottom: 12px;
+    margin-top: 30px;
+}
+/* end */
+
+    /* footer start */
+
+    .footer__title{
+        
+    }
+
+    .footer__sect{
+
+    margin-top: 211px;
+
+    }
+
+   .footer{
+    position: relative;
+   }
+
+   .footer__image{
+    position: absolute;
+    max-width: 200px ;
+   }
+
+ .footer__title{
+    margin-left: 450px ;
+    display: flex;
+    justify-content: space-between;
+    gap: 140px;
  
+    
+ }
+
+ .footer__text-sub-title{
+    white-space: nowrap;
+
+
+
+ font-family: 'Gotham';
+ font-style: normal;
+ font-weight: 700;
+ font-size: 20px;
+ line-height: 30px;
+ color: var(--color-black);
+ margin-bottom: 30px;
+
+ }
+.footer__text-sub{
+    font-family: var(--main-fonts);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 15px;
+}  
+
+
+.footer__text-sub:last-child{
+    margin-bottom: 0px;
+}
+
+
+.item__footer-inp{
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    width: 300px;
+    height: 50px;
+    font-family: var(--main-fonts);
+    margin-bottom: 25px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+    /* footer end */
+
+    
