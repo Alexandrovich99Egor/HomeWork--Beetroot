@@ -8,6 +8,12 @@
     box-sizing: border-box;
 }
 
+.wrapper{
+    background-image: url(../image/bg.svg);
+    background-repeat: no-repeat;
+    background-position-y: 863px ;
+    background-position-x:250px ;
+}
 
 img{
     display: block;
