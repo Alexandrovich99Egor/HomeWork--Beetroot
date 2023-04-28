@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* header start */
+.header__cont{
+    display: flex;
+    align-items: center;
+    padding:13px 120px 0px 120px;
+    
+}
+
+.header__nav{
+    margin-left: 50px ;
+    display: flex;
+}
+
+.image__header-logo{
+    margin-left: 601px ;
+}
+
+.span__item{
+    display: flex;
+   margin-left: 10px;
+   margin-right: 10px;
+   font-family: 'Staatliches';
+   font-weight: 400;
+   mix-blend-mode: normal;
+   
+}
+/* header end */
+
+/* heading section  start*/
+
+.heading__cont{
+    display: flex;
+    padding-left: 120px;
+    margin-top: 96px;
+}
+
+.image__heading:nth-child(2){
+margin-left: 20px;
+}
+/* heading end */
+
+
+/* card pizdec start */
+.section__card{
+padding-left: 135px ;
+padding-right: 135px;
+margin-top: 60px;
+
+}
+
+
+.card__cont{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px ;
+    transform-style: preserve-3d;
+    
+}
+
+.card__cont-second{
+    display: flex;
+    gap: 30px;
+}
+
+
+.image_card-facebook{
+    transform: rotate(0deg);
+    
+}
+
+
+.image_card1{
+    width: 100%;
+    height: 100%;
+    perspective:1000px;
+    
+}
+
+
+.image_card:hover{
+    
+    transform: rotateX(200deg);
+    
+    filter: invert(100%);
+    transition: 0.9s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    
+    
+    
+    
+
+}
+.image_card:hover{
+    transform: scale();
+    
+}

@@ -19,6 +19,10 @@ ul{
 
 }
 
+li{
+    
+}
+
 button{
     border: 0;
     background: transparent;
@@ -31,6 +35,8 @@ a{
     text-decoration: none;
 
 }
+
+
 
 :root{
     /* fonts */
@@ -105,18 +111,33 @@ button{
 
 
 
-
 /* Header Start */
 .container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
 }
+.header{
+    position: relative;
+    position: sticky;
+    top: 50px;
+    
+    
+}
+
 
 .header_cont{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 3px 21px 7px rgba(0,0,0,0.64);
+    position: sticky;
+    top: 100px;
+    z-index: 11;
+    background-color: var(--color-white);
+    
+   
+    
     
 }
 
@@ -544,6 +565,7 @@ color: var(--color-white);
     max-width: 540px ;
     position: absolute;
     transform: translateX(660px);
+    z-index: 0;
     
     
     

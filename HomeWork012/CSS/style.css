@@ -1,0 +1,318 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.container{
+    max-width: 1440px ;
+}
+
+
+
+:root{
+/* colors */
+--color-black:#000000;
+
+
+
+/* fonts option */
+--fonts-header:'Staatliches';
+--fonts-sidebar-main:'Francois One';
+--fonts-main-content:'PT Sans';
+--fonts-option-heading-text: 400 36/48 (var(--fonts-sidebar-main))
+--font-option-sub-text: 400 36/46 var(--fonts-main-content)
+
+
+
+
+
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+li{
+    list-style: none;
+}
+
+body{
+    background-color: #C9C9C9 ;
+
+   
+
+}
+
+.wrapper{
+    background-image: url(../images/bg-picture.svg);
+    background-repeat: no-repeat;
+    background-position-x: 812px ;
+    background-position-y:150px;
+}
+
+/* header strart */
+.header-cont{
+    display: flex;
+    align-items: center;
+    position: relative;
+    position: fixed;
+    z-index: 22;
+    box-shadow: 0px 0px 45px 8px rgba(143,143,143,1);
+    background-color: #C9C9C9;
+    
+
+}
+
+
+.header__nav{
+    display: flex;
+    align-items: center;
+    padding: 26px 120px;
+    
+    
+    
+    
+}
+
+.header__logo{
+    position: absolute;
+    left: 1082px ;
+    top:0;
+    padding-top: 16px;
+    
+    
+    
+    
+    
+}
+
+.nav__link-special{
+    font-family: 'Tourney';
+    color: var(--color-black);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+
+
+    letter-spacing: 0.03em;
+    margin-right: 50px ;
+   
+
+}
+    
+.nav__link{
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+
+
+    text-align: center;
+    letter-spacing: 0.04em;
+    
+    
+  
+}
+
+.span__item{
+    font-family: var(--fonts-header);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: var(--color-black);
+}
+
+.header__nav > :nth-child(2) {
+    margin-right: 10px;
+}
+
+
+.header__nav > :nth-child(3) {
+    margin-right: 10px;
+}
+
+/* header end */
+
+
+
+/* Sidebar Start */
+
+.aside__link{
+    font-family: var(--fonts-sidebar-main) ;
+    color: var(--color-black);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+
+
+
+ 
+}
+
+.aside__cont{
+    flex-shrink: 0;
+    width: 385px;
+    margin-top: 106px ;
+    padding-left: 130px;
+    white-space: nowrap;
+
+
+    
+    display: flex;
+    align-items: center;
+    gap: 80px ;
+    position: sticky;
+    top: 100px;
+
+
+}
+
+.link__item:nth-child(n){
+    margin-bottom: 80px;
+    border-bottom: 0.5px solid #BDBDBD;
+    padding-bottom: 10px;
+
+}
+
+.main{
+    position: relative;
+
+}
+
+.aside{
+   position: sticky;
+}
+/* sidebar End */
+
+
+
+
+
+/* main content start */
+.main{
+    display: flex;
+    
+    
+}
+
+
+.main__cont{ 
+    max-width: 785px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 171px;
+    margin-top: 96px;
+   
+    
+    
+    
+   
+    
+    
+    
+    
+
+    
+}
+
+.main__text::before{
+  content: "";
+  display: block;
+  height: 8px; 
+  width: 100px; 
+  background-color: black;
+  position: relative;
+  
+ 
+   }
+    
+
+
+.main__text{
+    font-family: var(--fonts-sidebar-main);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: uppercase; 
+    
+    
+   
+   
+    
+
+
+
+}
+
+.main__text-sub{
+    font-family: var(--fonts-main-content);
+    font-weight: 400px ;
+    font-size: 26px;
+    line-height: 48px;
+    
+
+}
+
+
+.main__chapter{
+    font-family: 'Farro';
+    margin-left: 10px;
+    
+   
+    
+   
+    
+}
+
+
+.main__text-sub{
+    margin-top: 40px ;
+}
+
+.chapter__1{
+    max-width: 785px;
+    display: flex;
+    
+   
+    
+    
+    
+
+}
+
+.chapter__2{
+    max-width: 100px ;
+    display: flex;
+    white-space: nowrap;
+    margin-top: 98px ;
+}
+
+
+
+.chapter__3{
+    max-width: 785px;
+    margin-top: 70px;
+    display: flex;
+
+}
+
+.chapter__4{
+    display: flex;
+    margin-top: 70px;
+}
+/* main content end */

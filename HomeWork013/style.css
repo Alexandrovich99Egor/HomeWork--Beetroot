@@ -1,0 +1,21 @@
+.row{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #f2f2f2;
+    padding: 10px;;
+    
+}
+.image{
+    background-color: #ffffff;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.image:hover{
+    opacity: 0.5;
+}
