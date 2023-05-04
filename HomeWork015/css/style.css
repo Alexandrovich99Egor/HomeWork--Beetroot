@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* roots and defoult css */
+.container{
+
+}
+
+li{
+    list-style: none;
+}
+
+
+:root{
+    /* colors */
+
+    --color-purple-dark:#392C72;
+    --color-gray-dark:#4F4F4F;
+    --color-gray-middle:#828282;
+    --color-gray-light:#BDBDBD;
+    --color-purple-light:#9E8CFC;
+    --color-red:#EA5455;
+    --color-yellow:#F2C94C;
+    --color-green:#6FCF97;
+    --color-blue-dark:blue-dark;
+    --color-blue-dark:#161D31;
+
+    /* font option */
+    --font-sidebar-main:'Montserrat'
+    --font-sidebar-main: 400, 16/19.5;
+    --font-sidebar-submain: 'Montserrat'
+
+
+
+
+
+
+}
+
+.background__cont{
+    
+}
+
+.background__cont:hover{
+   
+}
+
+

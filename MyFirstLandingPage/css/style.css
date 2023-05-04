@@ -1,0 +1,406 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* colors */
+ :root{
+ --color-white:#FFFFFF;
+ --color-green:#3DB8A5;
+ /* fonts */
+ --fonts-main-family:'Bebas Neue'
+ --fonts-main-wsl: 700 100/100 var(--fonts-main-family);
+ /* header fonts */
+ --fonts-header-family:'Open Sans';
+ --fonts-header-wsl: 700 18/24 var(var(--fonts-header-family));
+
+
+
+
+ }
+
+ a{
+    text-decoration: none;
+ }
+
+
+ li{
+    list-style: none;
+
+ }
+
+ .container{
+   max-width: 1920px;
+   margin: 0 a;
+ }
+
+
+ body{
+  background-image: url(../images/BG\ photo.png) ;
+  background-repeat: no-repeat;
+  /* background-size: 1920px 1080px; */
+ 
+
+ }
+
+ /* header START */
+
+
+
+ .header__cont{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: fixed;
+   top: 0;
+   backdrop-filter: blur(10px);
+   
+   z-index: 22;
+
+  
+   
+   
+
+   
+ }
+
+ .nav__item{
+   display: flex;
+   gap: 50px;
+   white-space: nowrap;
+ }
+
+ 
+
+ .link{
+   color: var(--color-white);
+   font-family: var(--fonts-header-family);
+   font-weight: var(--fonts-header-wsl);
+   font-size: var(--fonts-header-wsl);
+   letter-spacing: 10%;
+   
+
+ }
+
+ .link:hover{
+  color: #ff0000;
+  transition: 1.3s;
+  
+ 
+  
+
+ }
+
+
+
+
+
+ .header__nav{
+  display: flex;
+  margin-left: 125px ;
+ }
+
+ .header__logo{
+  padding: 40px 0px 0px 125px;
+ }
+
+ .form__select{
+  margin-left: 365px;
+  display: block;
+
+ }
+
+ select{
+  border: 0;
+  font-family: var(--fonts-header-family);
+  color: var(--color-white);
+  background-color: black;
+  border: 0px solid black;
+  font-weight:700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 10%;
+  cursor: pointer;
+  background: transparent;
+ }
+
+ .icon__header{
+  display:flex;
+  gap: 28px ;
+  
+  
+  padding-right: 170px;
+  
+  
+ }
+
+
+ /* header END */
+
+
+ /* Surive Sect Start */
+
+
+ .cont-survive{
+ margin-top: 411px;
+ text-align: center;
+ white-space: nowrap;
+ }
+
+ .survive__text-main{
+  font-family: 'Bebas Neue';
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  letter-spacing: 3px;
+ }
+
+ .survive__text-sub{
+  font-family: 'Bebas Neue';
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  margin-top: 79px;
+ }
+
+ .button__survive{
+  display: flex;
+  justify-content: center;
+ 
+ 
+ }
+
+ .btn__survive{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-green);
+  width: 337px;
+  height: 78px;
+  border-radius: 4px;
+  backdrop-filter: blur(5px);
+  
+  background: transparent;
+  margin-top: 104px ;
+  cursor: pointer;
+ 
+  
+ }
+
+ .button__text{
+  font-family: var(--fonts-header-family);
+  color: var(--color-green);
+  font-size: 20px;
+  line-height: 27px;
+  
+  
+ }
+
+ .button__text:hover{
+  animation: glow 1s ease-in-out infinite;
+  color: var(--color-white);
+  transition: 2s;
+ }
+
+ @keyframes glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+    opacity: 0.7;
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+ .line__button{
+  border-right: 2px solid var(--color-green);
+  margin-left:20px ;
+  margin-right: 20px;
+
+ }
+ /* Survive Sect End */
+
+
+ .survive__text-main{
+  position: relative;
+ }
+
+ .survive__text-main::before{
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 25%;
+  width: 50%;
+  height: 3px;
+  background-color: #ff0000;
+  transform: scale(1);
+  opacity: 0.8;
+  animation: pulse 3s infinite;
+  
+
+ }
+
+ @keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+}
+
+.button__the-story{
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+
+}
+
+
+.btn__the-story{
+  background: none;
+  border: 0;
+
+}
+
+.link__btn-story{
+  color: var(--color-white);
+  font-family:var(--fonts-header-family);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 10px;
+
+}
+
+
+
+
+/* Section first end */
+
+
+
+/* Section second start */
+
+.about__game{
+  background-image: url(../images/bg\ image\ 2.png);
+  background-size: 1920px 1080px;
+ /* background-repeat: no-repeat;
+  */
+ 
+}
+
+.about__game:hover{
+  backdrop-filter: blur(5px);
+  
+
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.about__text-main{
+  font-family: 'Bebas Neue';
+  color: var(--color-white);
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: 3px;
+}
+
+.about__text-main-sub{
+  font-family: 'Bebas Neue';
+  color: var(--color-white);
+  font: size 30px; ;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 2px;
+
+}
+
+
+.about__text{
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px ;
+}
+
+.text-sub__cont{
+  max-width: 483px;
+  margin-left: 153px;
+}
+
+.about__text{
+  max-width: 700px;
+}
+
+
+.about__text-sub{
+  font-family: var(--fonts-header-family);
+  font-weight: 400 ;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--color-white);
+}
+
+
+
+
+
+
+
+.carousel{
+  display: flex;
+  position: relative;
+}
+
+.card-container{
+  position: absolute;
+  top: -613px;
+  right: 25px;
+}
+
+
+.card{
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.card:hover{
+  transform: translateX(-330px);
+  transition: 3s;
+
+}
