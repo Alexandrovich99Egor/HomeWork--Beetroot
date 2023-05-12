@@ -1,0 +1,188 @@
+:root {
+  --font-main: 'Bebas Neue', cursive;
+  --font-secondary: 'Open Sans', sans-serif;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-green: #3DB3A2;
+
+  /* 400 - розмір начертаніє шрифта (типу regular, чи 700 - bold) */
+  /* 100 px - font-size */
+  /* наступний 100 px - line-height */
+  --font-h1: 400 100px / 100px var(--font-main);
+  --font-subtext: 700 30px / 30px var(--font-main);
+  --font-text: 400 20px / 30px var(--font-secondary);
+  --font-btn: 700 20px / 28px var(--font-secondary);
+  --font-link: 700 18px / 25px var(--font-secondary);
+  --font-link-2: 700 16px / 22px var(--font-secondary);
+}
+
+/* Global Style */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  /*плавний скрол:*/
+  scroll-behavior: smooth;
+}
+
+body {
+  font: var(--font-text);
+  color: var(--color-white);
+  background: var(--color-black);
+}
+
+img {
+  /*теж завжди ставлю для всіх img ці дві властивості:*/
+  width: 100%;
+  display: block;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.heading-1 {
+  font: var(--font-h1);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/*так по замовчуванню робимо контейнер - який обмежує твій контент по ширині:*/
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  /*цей падінг теж потрібний, коли екран буде менше 1600px, в тебе залишаться відступи по бокам.:*/
+  padding: 0 16px;
+}
+
+/* Global Style End */
+
+
+/* Header Style */
+
+.header {
+  /*фіксується відносно body, в нього по замовчуванню в самому бравзері стоїть position relativ:*/
+  position: fixed;
+  top: 68px;
+  /*розширюємо хедер на всю ширину екрану:*/
+  width: 100%;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 259px;
+}
+
+.menu__list {
+  display: flex;
+  gap: 50px;
+}
+
+.menu__link {
+  font: var(--font-link);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.social {
+  display: flex;
+  gap: 80px;
+}
+
+.icon__row {
+  margin-left: 40px;
+  display: flex;
+  gap: 28px;
+  /*релатів для вертикальної лінії-бордера:*/
+  position: relative;
+}
+
+/*малюємо вертикальну лінію-бордер:*/
+.icon__row::before {
+  content: '';
+  width: 1px;
+  height: 40px;
+  background: var(--color-white);
+  position: absolute;
+  top: -6px;
+  left: -40px;
+}
+
+/* Header Style End */
+
+/* Hero Style */
+
+.hero {
+  /* Запис background в одну строку. Щоб він працював, потрібно зберігати цю послідовність (але якщо тобі зручніше не в одну строку - то роби в не одну:)) */
+  /* no-repeat - ти знаєш*/
+  /* center - стає по-центру по вертикалі і горизонталі */
+  /* cover - розтягується на ширину екрану, думаю тому й картинка раніше не розтягувалася, тут можна глянути док: https://developer.mozilla.org/en-US/docs/Web/CSS/background-size */
+  background: url(../images/hero-bg.jpg) no-repeat center / cover;
+}
+
+.hero__container {
+  padding: 564px 0 354px;
+  text-align: center;
+}
+
+.hero__sub-text {
+  margin: 15px 0 0;
+  font: var(--font-subtext);
+}
+
+.hero__btn {
+  margin: 79px auto 0;
+  padding: 20px 45px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+
+  width: fit-content;
+  font: var(--font-btn);
+  color: var(--color-green);
+  background: linear-gradient(194.68deg, rgba(158, 218, 209, 0.1) 11.27%, rgba(61, 179, 162, 0.1) 90.4%);
+  border: 2px solid var(--color-green);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(17.5px);
+  border-radius: 6px;
+}
+
+.hero__btn-price {
+  position: relative;
+}
+
+.hero__btn-price::before {
+  content: '';
+  width: 1px;
+  height: 40px;
+  background: var(--color-green);
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+}
+
+.hero__text-down {
+  margin: 80px 0 0;
+  font: var(--font-link-2);
+}
+
+.hero__icon-down {
+  margin: 10px auto 0;
+  width: 36px;
+}
+
+
+/* Hero Style End */
+
