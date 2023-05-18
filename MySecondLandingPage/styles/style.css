@@ -1,0 +1,316 @@
+* {
+    padding: 0;
+    margin: 0;
+    margin: 0auto;
+    scroll-behavior: smooth;
+
+}
+
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+li {
+    list-style: none;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+}
+
+button {
+    border: var(--color-white) solid 2px;
+    border-radius: 6px;
+}
+
+/* Veribles */
+
+:root {
+    /* colors */
+
+    --color-white: #FFFFFF;
+    --color-bark-blue: #194484;
+    --color-medium-blue: #0D6EB7;
+    --color-light-blue: #44C9FF;
+    --color-green: #06B25F;
+
+    /* fonts */
+
+
+    /* Montserrat */
+    --font-sub-main: 'Montserrat';
+    /* Harabara */
+    --font-main: 'Harabara';
+
+
+    --font-header-nav: 700 16px/36px var(--font-sub-main);
+    --font-main-title: 700 44px/60px var(--font-main);
+    --font-main-sub: 400 16px/26px var(--font-sub-main);
+    --font-btn: 700 16px/36px var(--font-sub-main);
+    --font-heading-h2: 700 29px/38px var(--font-main);
+
+
+
+}
+
+body {
+    background-color: fuchsia;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+/* HEADER START */
+.main {
+    background-image: url(../images/image\ 3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+
+}
+
+
+
+
+.main::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(36, 6, 56, 1) 26%, rgba(253, 29, 29, 0) 100%, rgba(252, 176, 69, 1) 100%);
+    height: 100%;
+    z-index: -1;
+
+
+}
+
+.main::after {
+    content: '';
+    background-image: url(../images/Vector\ \(2\).svg);
+
+
+
+
+}
+
+
+
+.header {
+    width: 100%;
+    background: rgba(33, 33, 33, 0.3);
+    box-shadow: 0px 4px 12px rgba(24, 9, 96, 0.1);
+
+}
+
+
+
+
+.header-logo {
+    width: 208px;
+}
+
+.header-cont {
+    display: flex;
+    justify-content: space-between;
+
+
+
+
+
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+
+
+.nav__list {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+
+}
+
+.item__link {
+    font: var(--font-header-nav);
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.item__link:hover {
+    color: var(--color-light-blue);
+    font-size: 22px;
+    transition: 1s;
+}
+
+.button-header {
+    margin-top: 19px;
+}
+
+.btn-header-item {
+    font: var(--font-btn);
+    color: var(--color-white);
+    background: transparent;
+    padding: 5px 15px;
+}
+
+
+/* HEADER END */
+
+/* MAIN TEXT START */
+.main-cont {
+    padding: 308px 0 338px;
+}
+
+
+.main__text-cont {
+
+
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+
+
+
+
+
+
+
+}
+
+
+.main__text-h1 {
+    max-width: 550px;
+    white-space: nowrap;
+    color: var(--color-white);
+    font: var(--font-main-title);
+    text-transform: uppercase;
+    text-align: start;
+
+}
+
+
+.main__text-h2 {
+    color: var(--color-light-blue);
+    font: var(--font-heading-h2);
+    white-space: nowrap;
+    margin-top: 17px;
+
+
+
+}
+
+
+
+.main__text-sub {
+    display: block;
+    max-width: 550px;
+    color: var(--color-white);
+    font: var(--font-main-sub);
+    text-align: start;
+    margin-top: 21px;
+}
+
+.btn-main {
+    margin-top: 40px;
+    display: flex;
+    gap: 24px;
+}
+
+.btn-item-main {
+    color: var(--color-white);
+    font: var(--font-btn);
+    background: transparent;
+    outline: none;
+    padding: 5px 20px;
+
+}
+
+.btn-item-main:last-child {
+    background-color: var(--color-green);
+    border: none;
+    text-transform: uppercase;
+
+
+}
+
+.main__text-cont {
+    position: relative;
+}
+
+
+.main-icon__scoial {
+    width: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    background-color: var(--color-white);
+    border-radius: 3px;
+    box-shadow: 0px 2px 12px 1px rgba(29, 51, 107, 0.25);
+    justify-content: center;
+    position: relative;
+
+
+}
+
+.main-icon__scoial::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00, #ff00ff);
+    z-index: -1;
+    opacity: 0.5;
+    animation: gradient-animation 3s linear infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {}
+}
+
+
+
+
+
+.main__text_sub-cont {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+.icon__item-social {
+
+    width: 24px;
+
+}
+
+/* Mobile */
