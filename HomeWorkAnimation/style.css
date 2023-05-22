@@ -1,0 +1,63 @@
+.row {
+    display: flex;
+    gap: 15px;
+    width: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+}
+
+
+.row__item {
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    gap: 30px;
+    border-radius: 50%;
+    animation: item-animation 0.5s infinite;
+}
+
+
+
+.row__item:nth-child(2) {
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    gap: 30px;
+    border-radius: 50%;
+    animation: item-animation 0.6s `infinite;
+}
+
+
+.row__item:last-child {
+    width: 80px;
+    height: 80px;
+
+    gap: 30px;
+    border-radius: 50%;
+    animation: item-animation 0.7s s infinite;
+}
+
+
+
+@keyframes item-animation {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(50px);
+    }
+
+
+    100% {
+        transform: translateY(0px) rotateX(50deg);
+    }
+
+
+
+
+
+
+}
