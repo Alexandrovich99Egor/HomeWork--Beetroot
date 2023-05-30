@@ -105,11 +105,14 @@ body {
 
 
 
+
+
 .header {
     width: 100%;
     background: rgba(33, 33, 33, 0.3);
     box-shadow: 0px 4px 12px rgba(24, 9, 96, 0.1);
     position: fixed;
+
 
 }
 
@@ -149,7 +152,6 @@ body {
     display: flex;
     justify-content: center;
     gap: 36px;
-
 }
 
 .item__link {
@@ -160,13 +162,11 @@ body {
 
 .item__link:hover {
     color: var(--color-light-blue);
-    font-size: 22px;
-    transition: 1s;
+    border-bottom: 1px solid var(--color-white);
 }
 
 .button-header {
     margin-top: 19px;
-
 }
 
 .btn-header-item {
@@ -175,6 +175,76 @@ body {
     background: transparent;
     padding: 5px 15px;
 }
+
+.list__arrow {
+    display: block;
+}
+
+.list__arrow-item {
+    width: 10px;
+}
+
+
+
+
+.item__link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+.drop__menu-item {
+    color: var(--color-white);
+}
+
+.nav__list {
+    position: relative;
+}
+
+.item__link:hover .list__arrow {
+    transform: rotate(180deg);
+
+}
+
+
+
+.item__link {
+    position: relative;
+
+}
+
+.link__drop-menu {
+    max-height: 0;
+    overflow: hidden;
+    gap: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    max-width: 344px;
+    width: 100%;
+    transition: 2s;
+    background: rgba(33, 33, 33, 0.8);
+    box-shadow: 2px 4px 16px rgba(158, 158, 158, 0.3);
+    text-align: center;
+    border-radius: 20px;
+    padding: 0px 20px;
+
+
+
+
+
+
+
+}
+
+.list__item:hover .item__link+.link__drop-menu {
+    display: block;
+    max-height: 2000px;
+}
+
+
 
 
 /* HEADER END */
@@ -186,18 +256,9 @@ body {
 
 
 .main__text-cont {
-
-
     justify-content: start;
     display: flex;
     flex-direction: column;
-
-
-
-
-
-
-
 }
 
 
@@ -216,9 +277,6 @@ body {
     color: var(--color-light-blue);
     font: var(--font-heading-h2);
     margin-top: 17px;
-
-
-
 }
 
 
@@ -271,8 +329,6 @@ body {
     box-shadow: 0px 2px 12px 1px rgba(29, 51, 107, 0.25);
     justify-content: center;
     position: relative;
-
-
 }
 
 .main-icon__scoial::before {
@@ -319,7 +375,6 @@ body {
 .main__text_sub-cont {
     display: flex;
     justify-content: space-between;
-
 }
 
 
@@ -352,7 +407,6 @@ body {
 
 
 
-
 .technologies__social {
     display: flex;
     justify-content: center;
@@ -377,32 +431,21 @@ body {
     display: flex;
     margin-bottom: 30px;
     box-shadow: 0px 4px 12px rgba(41, 24, 111, 0.2);
-
-
-
 }
 
 
 .icon__item-social:first-child {
     width: 30px;
     margin-left: 15px;
-
-
-
-
 }
 
 
 .social__item:nth-child(2) {
     background-color: var(--color-bark-blue);
-
-
-
 }
 
 .social__item:last-child {
     background-color: var(--color-light-blue);
-
 }
 
 
@@ -439,7 +482,6 @@ body {
     margin-top: 120px;
     box-shadow: 0px 3px 16px 2px rgba(29, 51, 107, 0.15);
     border-radius: 16px;
-
 }
 
 
@@ -468,26 +510,21 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-
 }
 
 
 
 .technologies__rating-stars-icon {
     width: 24px;
-
 }
 
 .technologies__button {
     width: 258px;
-
-
 }
 
 .technologies-btn {
     text-transform: uppercase;
     cursor: pointer;
-
     background-color: var(--color-green);
     padding: 5px 5px;
     color: var(--color-white);
@@ -507,9 +544,6 @@ body {
 
 .services {
     margin-top: 120px;
-
-
-
 }
 
 
@@ -538,14 +572,11 @@ body {
     color: var(--color-bark-blue);
     text-transform: uppercase;
     margin-bottom: 102px;
-
-
 }
 
 
 
 .services__about-title {
-
     font: var(--font-services-about-h3);
     color: var(--color-medium-blue);
 }
@@ -561,7 +592,6 @@ body {
 .services-development__about-main {
     display: flex;
     justify-content: center;
-
     flex-direction: row-reverse;
     gap: 27px;
     align-items: center;
@@ -745,10 +775,6 @@ body {
     transform: scale(1.1);
     transition: all 0.5s;
     box-shadow: 0px 3px 16px 4px rgba(29, 51, 107, 1);
-
-
-
-
 }
 
 
@@ -756,13 +782,11 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
-
 }
 
 .card-item-image {
     max-width: 140px;
     padding: 20px;
-
 }
 
 
@@ -798,7 +822,6 @@ body {
     text-align: center;
 }
 
-
 .contacts__title-main-h2 {
     font: var(--font-heading-h2-1);
     color: var(--color-bark-blue);
@@ -807,7 +830,6 @@ body {
     margin-bottom: 60px;
 
 }
-
 
 .contacts__sub-title-main {
     font: var(--font-location-sub);
